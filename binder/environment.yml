@@ -1,14 +1,21 @@
-# See the examples folder for a full scientifc Python environment
 channels:
   - conda-forge
 
 dependencies:
-  # HUB BASICS. ALWAYS INCLUDE
-  - jupyter_contrib_nbextensions==0.5.1
-  # Required until https://github.com/jupyterhub/repo2docker/pull/1196 is merged
-  - jupyterhub-singleuser>=3.0,<4.0
-  # Set default python version to 3.10 - repo2docker sets it to 3.7 instead by default,
-  # which can limit us to older package versions
-  - python=3.10
+  # HUB Standards
+  # default Python for repo2docker is 3.7; upgrade to something more recent
+  - python~=3.11.0
+  # Required for JH use until https://github.com/jupyterhub/repo2docker/pull/1196 is merged
+  - jupyterhub-singleuser~=4.0.1
+  # Specify major version of jupyterlab to use. Manually bump it when you want to upgrade
+  # jupyterlab version
+  - jupyterlab>=4.0,<4.1
+  # This provides memory usage stats on JupyterLab and classic notebook
+  - jupyter-resource-usage~=1.0.1
+  # gh-scoped-creds allows users to securely push to GitHub from their repo.
+  - gh-scoped-creds==4.1
 
-  # Now add your extra packages here
+  ## Your packages
+  # See the examples folder for a full scientifc Python environment
+  
+  
