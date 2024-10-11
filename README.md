@@ -8,7 +8,7 @@ A repository for creating images for a Jupyter Hub
 
 You can do everything on GitHub without cloning the repo to your local computer.
 
-1. Click the green Template button to create your own copy.
+1. Click the green "use this template" button to create your own copy.
 2. Edit the .github/workflows/repo2docker.yaml file. Scroll to very bottom and change `nmfs-opensci/hub-image-template` to `<your username>/<your repo>`.
 3. Edit the files in binder directory. Read the [repo2docker](https://repo2docker.readthedocs.io/en/latest/config_files.html#environment-yml-install-a-conda-environment) documentation on configuration files
 4. See an example of a full feature environment.yaml for scientific Python in binder directory.
