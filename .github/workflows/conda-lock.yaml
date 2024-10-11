@@ -26,6 +26,7 @@ jobs:
       run: |
         cd binder
         conda-lock --platform linux-64 --kind lock
+        mv conda-linux-64.lock.yml conda-lock.yml
     - name: commit changes to tracked files
       run: |
         if [[ $(git ls-files --modified) ]]; then
