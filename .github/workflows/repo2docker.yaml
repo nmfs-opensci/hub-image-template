@@ -1,17 +1,10 @@
 name: build jupyterhub image
 on:
-  workflow_run:
-    workflows: [update conda lockfile]
-    types:
-      - completed
   push:
     branch:
       - acoustics
     paths:
       - .github/workflows/repo2docker.yaml
-      # files used by binder/appendix
-      - conda/conda-lock.yml
-      # files used by repo2docker, in order of use
       - binder/apt.txt
       - binder/environment.yml
       - binder/start
