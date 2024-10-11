@@ -1,6 +1,8 @@
 name: update conda lockfile
 on:
   push:
+    branch:
+      - acoustics
     paths:
       - .github/workflows/conda-lock.yaml
       - conda/environment.yml
