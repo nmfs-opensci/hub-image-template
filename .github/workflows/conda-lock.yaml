@@ -6,7 +6,7 @@ on:
       - main
     paths:
       - .github/workflows/conda-lock.yaml
-      - binder/environment.yml
+      - binder/tmp-env.yml
 permissions:
   contents: write
 jobs:
@@ -25,8 +25,8 @@ jobs:
       shell: bash -el {0}
       run: |
         cd binder
-        conda-lock --platform linux-64 --kind lock
-        mv conda-linux-64.lock.yml conda-lock.yml
+        conda-lock --platform linux-64 --kind env --file tmp-env.yml
+        mv conda-linux-64.lock.yml environment.yml
     - name: commit changes to tracked files
       run: |
         if [[ $(git ls-files --modified) ]]; then
