@@ -1,4 +1,6 @@
 # Hub Image Template
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/nmfs-opensci/hub-image-template/HEAD)
+[![Build and push container image](https://github.com/nmfs-opensci/hub-image-template/actions/workflows/build.yaml/badge.svg)](https://github.com/nmfs-opensci/py-rocket-2/actions/workflows/build.yaml)
 
 A repository for creating images for a Jupyter Hub
 
