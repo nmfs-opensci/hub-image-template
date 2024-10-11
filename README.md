@@ -11,8 +11,12 @@ You can do everything on GitHub without cloning the repo to your local computer.
 1. Click the green "use this template" button to create your own copy.
 2. Edit the .github/workflows/repo2docker.yaml file. Scroll to very bottom and change `nmfs-opensci/hub-image-template` to `<your username>/<your repo>`.
 3. Edit the files in binder directory. Read the [repo2docker](https://repo2docker.readthedocs.io/en/latest/config_files.html#environment-yml-install-a-conda-environment) documentation on configuration files
-4. See an example of a full feature environment.yaml for scientific Python in binder directory.
-5. If you need to add command line tools, edit binder/appendix. See an example in the examples directory.
+4. See an example of a full feature [environment.yaml](https://github.com/nmfs-opensci/hub-image-template/blob/main/examples/earth-sci-env.yaml) for scientific Python in the `examples` directory.
+5. If you need to add command line tools, edit `binder/appendix`. See an example in the `examples` directory.
+
+## How to test
+
+Go to [mybinder.org](https://mybinder.org/). Copy the url for the repo into the box.
 
 ## Using this in JupyterHub
 
