@@ -1,10 +1,12 @@
 name: update conda lockfile
 on:
+  workflow_dispatch: null
   push:
+    branch:
+      - main
     paths:
       - .github/workflows/conda-lock.yaml
-      - conda/environment.yml
-  workflow_dispatch:
+      - binder/environment.yml
 permissions:
   contents: write
 jobs:
@@ -22,9 +24,8 @@ jobs:
     - name: run conda-lock
       shell: bash -el {0}
       run: |
-        cd conda
-        conda-lock --platform linux-64 --kind env
-        mv conda-linux-64.lock.yml ../binder/environment.yml
+        cd binder
+        conda-lock --platform linux-64 --kind lock
     - name: commit changes to tracked files
       run: |
         if [[ $(git ls-files --modified) ]]; then
