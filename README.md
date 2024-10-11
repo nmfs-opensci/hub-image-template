@@ -4,9 +4,9 @@
 
 A repository for creating images for a Jupyter Hub
 
-How to use? 
+## How to use? 
 
-You can do everything on GitHub wo cloning the repo.
+You can do everything on GitHub without cloning the repo to your local computer.
 
 1. Click the green Template button to create your own copy.
 2. Edit the .github/workflows/repo2docker.yaml file. Scroll to very bottom and change `nmfs-opensci/hub-image-template` to `<your username>/<your repo>`.
