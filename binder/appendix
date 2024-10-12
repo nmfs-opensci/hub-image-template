@@ -1,2 +1,3 @@
 # Add Dockerfile commands here to be added
 # Examples in the examples folder
+USER root
