@@ -1,7 +1,6 @@
 name: build jupyterhub image
 on:
   workflow_dispatch: null
-  workflow_run:
   push:
     branch:
       - main
