@@ -11,6 +11,7 @@ on:
       - binder/environment.yml
       - binder/start
       - binder/appendix
+      - binder/postBuild
 concurrency:
   group: ${{ github.workflow }}
   cancel-in-progress: true
