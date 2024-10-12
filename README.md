@@ -16,7 +16,7 @@ You can do everything on GitHub without cloning the repo to your local computer.
 
 ## How to test
 
-Go to [mybinder.org](https://mybinder.org/). Copy the url for the repo into the box.
+Go to [mybinder.org](https://mybinder.org/). Copy the url for the repo into the box. Or you can click the 'Open in Binder' badge.
 
 ## Using this in JupyterHub
 
