@@ -2,9 +2,6 @@ name: build jupyterhub image
 on:
   workflow_dispatch: null
   workflow_run:
-    workflows: [update conda lockfile]
-    types:
-      - completed
   push:
     branch:
       - main
@@ -19,7 +16,6 @@ concurrency:
   cancel-in-progress: true
 jobs:
   build:
-    if: ${{ github.event_name == 'push' || github.event.workflow_run.conclusion == 'success' }}
     runs-on: ubuntu-latest
     steps:
     - name: checkout files in repo
