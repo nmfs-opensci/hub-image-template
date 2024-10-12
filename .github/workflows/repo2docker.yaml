@@ -32,3 +32,6 @@ jobs:
         DOCKER_REGISTRY: ghcr.io
         IMAGE_NAME: nmfs-opensci/hub-image-template
         APPENDIX_FILE: binder/appendix
+        # Next line is mandatory for a JupyterHub deployment since default is ${HOME}
+        # and that is wiped out if there is a persistent home directory
+        REPO_DIR: /srv/repo
