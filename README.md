@@ -2,7 +2,7 @@
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/nmfs-opensci/hub-image-template/HEAD)
 [![Build and push container image](https://github.com/nmfs-opensci/hub-image-template/actions/workflows/repo2docker.yaml/badge.svg)](https://github.com/nmfs-opensci/py-rocket-2/actions/workflows/repo2docker.yaml)
 
-A repository for creating images for a Jupyter Hub
+A repository for creating images for a Jupyter Hub. The main purpose is to help users create custom images for JupyterHubs, expecially if they need to add command line tools to the image.  The base image for the NMFS Openscapes JupyterHub is based on [py-rocket](https://github.com/nmfs-opensci/py-rocket-2/tree/main).
 
 ## How to use? 
 
