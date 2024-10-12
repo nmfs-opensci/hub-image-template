@@ -27,3 +27,4 @@ jobs:
         DOCKER_REGISTRY: ghcr.io
         IMAGE_NAME: nmfs-opensci/image-acoustics
         APPENDIX_FILE: binder/appendix
+        REPO2DOCKER_EXTRA_ARGS: "--debug"
